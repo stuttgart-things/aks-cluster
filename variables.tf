@@ -1,11 +1,11 @@
 variable "client_id" {
   description = "Azure Kubernetes Service Cluster service principal"
-  default = "914494dc-51b8-4a65-9767-81b17999992d"
+  default = ""
 }
 
 variable "client_secret" {
   description = "Azure Kubernetes Service Cluster password"
-  default = "y-O8Q~uikZHVYBmxbh2OCXRVSAOqCRFu2BY2wdrq"
+  default = ""
 }
 
 variable "resource_group_name" {
