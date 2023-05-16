@@ -30,7 +30,10 @@ The following is an example of *main.tf*.  Create the file and modify the variab
 module "aks-cluster" {
     #source = "git::https://codehub.sva.de/Lab/stuttgart-things/kubernetes/aks-cluster.git"
     source = "../aks-cluster"
-
+    
+    client_id       = var.client_id
+    client_secret   = var.client_secret
+    
     resource_group_name = "rg_aks"
     location = "germanywestcentral"
     environment = "Demo" 
